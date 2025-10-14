@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dubai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Minimal Homepage */
+.minimal-home {
+    height: 100vh;
+    background: #FFF8ED;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+}
+
+.logo h1 {
+    font-family: 'Mistral', cursive;
+    font-size: 135px;
+    font-weight: normal;
+    color: #000;
+    margin: 0;
+    line-height: 1;
+}
+
+.cube-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    perspective: 1000px;
+    z-index: 1;
+}
+
+.cube {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.cube:hover {
+    transform: scale(1.1);
+}
+
+.cube-face {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.cube-face:nth-child(1) { transform: rotateY(0deg) translateZ(20px); }
+.cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(20px); }
+.cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(20px); }
+.cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(20px); }
+.cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(20px); }
+.cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(20px); }
+
+/* Portfolio View */
+.portfolio-view {
+    min-height: 100vh;
+    background: #ffb849;
+    position: relative;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.portfolio-view header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+}
+
+.close-toggle {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 50px;
+    cursor: pointer;
+    color: #000;
+    padding: 0.5rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+    transform: scaleY(0.9) scaleX(1.1);
+}
+
+.close-toggle:hover {
+    transform: scaleY(0.9) scaleX(1.1) scale(1.1);
+}
+
+.menu-overlay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.main-nav {
+    position: absolute;
+    top: 40%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.2rem;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Dubai', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.nav-menu li a:hover {
+    color: #666;
+    transform: translateX(10px);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20%;
+    right: 6rem;
+    color: #000;
+}
+
+.photographer-name {
+    font-family: 'Dubai', sans-serif;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.work-section, .about-section {
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    background: #FFF8ED;
+    backdrop-filter: blur(10px);
+}
+
+.work-content, .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.work-content h2, .about-content h2 {
+    font-family: 'Dubai', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #000;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.about-content p {
+    font-family: 'Dubai', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .minimal-home .logo h1 {
+        font-size: 2rem;
+    }
+
+    .cube-toggle {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .cube {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cube-face {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cube-face:nth-child(1) { transform: rotateY(0deg) translateZ(15px); }
+    .cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(15px); }
+    .cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(15px); }
+    .cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(15px); }
+    .cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(15px); }
+    .cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(15px); }
+
+    .portfolio-view .logo h1 {
+        font-size: 2rem;
+    }
+
+    .photographer-name {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .main-nav {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 3rem;
+    }
+
+    .nav-menu {
+        align-items: center;
+    }
+
+    .work-content h2, .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .portfolio-view header {
+        padding: 1rem;
+    }
+
+    .header-logo {
+        height: 70px;
+    }
+
+    .minimal-home {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .photographer-name {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .nav-menu li a {
+        font-size: 1.2rem;
+    }
+}

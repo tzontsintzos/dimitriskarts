@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitris Kartsagkoulis - Photographer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mistral&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Minimal homepage -->
+        <div v-if="!portfolioOpen" class="minimal-home">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="website_colored.mp4" type="video/mp4">
+            </video>
+            <div class="logo">
+                <img src="logo.png" alt="Karts" class="header-logo">
+            </div>
+            <div class="cube-toggle" @click="openPortfolio">
+                <div class="cube">
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full portfolio view -->
+        <div v-if="portfolioOpen" class="portfolio-view">
+            <header>
+                <div class="logo">
+                    <img src="logo.png" alt="Karts" class="header-logo">
+                </div>
+                <div class="close-toggle" @click="closePortfolio">✕</div>
+            </header>
+
+            <div class="menu-overlay">
+                <nav class="main-nav">
+                    <ul class="nav-menu">
+                        <li><a href="#home" @click="setActiveSection('home')">Home</a></li>
+                        <li><a href="#work" @click="setActiveSection('work')">Work</a></li>
+                        <li><a href="#about" @click="setActiveSection('about')">About</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hero-content" v-if="activeSection === 'home'">
+                    <h2 class="photographer-name">DIMITRIS<br>KARTSAGKOULIS</h2>
+                </div>
+            </div>
+
+            <main>
+                <section id="work" v-show="activeSection === 'work'" class="work-section">
+                    <div class="work-content">
+                        <h2>Work</h2>
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item" v-for="item in portfolioItems" :key="item.id">
+                                <img :src="item.image" :alt="item.title" @click="openLightbox(item)">
+                                <h3>{{ item.title }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" v-show="activeSection === 'about'" class="about-section">
+                    <div class="about-content">
+                        <h2>About</h2>
+                        <p>{{ aboutText }}</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <div v-if="lightboxImage" class="lightbox" @click="closeLightbox">
+            <div class="lightbox-content">
+                <img :src="lightboxImage.image" :alt="lightboxImage.title">
+                <button class="lightbox-close" @click="closeLightbox">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
