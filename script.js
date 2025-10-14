@@ -18,7 +18,10 @@ createApp({
             this.workMenuOpen = !this.workMenuOpen;
         },
         selectCategory(category) {
-            console.log('Selected category:', category);
+            console.log('Selecting category:', category);
+            this.activeSection = category;
+            this.workMenuOpen = false;
+            window.location.hash = category;
         },
         goBack() {
             this.activeSection = 'home';

@@ -35,7 +35,7 @@
                 <div class="logo">
                     <img src="logo.png" alt="Karts" class="header-logo">
                 </div>
-                <div v-if="activeSection !== 'projects' && activeSection !== 'art' && activeSection !== 'about'" class="close-toggle" @click="closePortfolio">✕</div>
+                <div v-if="activeSection === 'home' || activeSection === 'work'" class="close-toggle" @click="closePortfolio">✕</div>
             </nav>
 
             <div class="menu-overlay" v-if="activeSection === 'home'">
@@ -106,6 +106,56 @@
                     <footer class="back-link">
                         <a href="#" @click.prevent="goBack">&lt;back</a>
                     </footer>
+                </section>
+
+                <section id="interior" v-show="activeSection === 'interior'" class="interior-section">
+                    <nav class="interior-header">
+                        <h2>interior</h2>
+                    </nav>
+
+                    <div class="time-button">
+                        <span>10am</span>
+                    </div>
+
+                    <main class="interior-gallery">
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9333.JPG" alt="Interior 1"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9361.JPG" alt="Interior 2"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9336.JPG" alt="Interior 3"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_1635.JPG" alt="Interior 4"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9355.JPG" alt="Interior 5"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_1605.jpg" alt="Interior 6"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9384.JPG" alt="Interior 7"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_1616.jpg" alt="Interior 8"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9399.JPG" alt="Interior 9"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_1659.jpg" alt="Interior 10"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9410.JPG" alt="Interior 11"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_1661.jpg" alt="Interior 12"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9414.JPG" alt="Interior 13"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9429.JPG" alt="Interior 14"></div>
+                        <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9468.JPG" alt="Interior 15"></div>
+                    </main>
+                </section>
+
+                <section id="fashion-portraits" v-show="activeSection === 'fashion-portraits'" class="fashion-section">
+                    <nav class="fashion-header">
+                        <h2>fashion/portraits</h2>
+                    </nav>
+
+                    <div class="project-button">
+                        <span>Andrew</span>
+                    </div>
+
+                    <main class="fashion-gallery">
+                        <div class="fashion-row-1">
+                            <div class="fashion-item large"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05636.JPG" alt="Fashion 1"></div>
+                            <div class="fashion-item medium"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05650.JPG" alt="Fashion 2"></div>
+                            <div class="fashion-item small"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05656.JPG" alt="Fashion 3"></div>
+                        </div>
+                        <div class="fashion-row-2">
+                            <div class="fashion-item medium-left"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_0952.JPG" alt="Fashion 4"></div>
+                            <div class="fashion-item medium-right"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_1010.JPG" alt="Fashion 5"></div>
+                        </div>
+                    </main>
                 </section>
 
                 <section id="about" v-show="activeSection === 'about'" class="about-section">
