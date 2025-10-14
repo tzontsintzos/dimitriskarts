@@ -31,23 +31,32 @@
 
         <!-- Full portfolio view -->
         <div v-if="portfolioOpen" class="portfolio-view">
-            <header>
+            <nav class="main-header">
                 <div class="logo">
                     <img src="logo.png" alt="Karts" class="header-logo">
                 </div>
-                <div class="close-toggle" @click="closePortfolio">✕</div>
-            </header>
+                <div v-if="activeSection !== 'projects' && activeSection !== 'art' && activeSection !== 'about'" class="close-toggle" @click="closePortfolio">✕</div>
+            </nav>
 
-            <div class="menu-overlay">
+            <div class="menu-overlay" v-if="activeSection === 'home'">
                 <nav class="main-nav">
                     <ul class="nav-menu">
                         <li><a href="#home" @click="setActiveSection('home')">Home</a></li>
-                        <li><a href="#work" @click="setActiveSection('work')">Work</a></li>
+                        <li class="has-submenu">
+                            <a href="#work" @click.prevent="toggleWorkMenu" class="menu-toggle">
+                                Work
+                                <span class="arrow" :class="{ 'arrow-down': workMenuOpen }">∨</span>
+                            </a>
+                            <ul v-show="workMenuOpen" class="submenu">
+                                <li><a href="#projects" @click="setActiveSection('projects')">Projects</a></li>
+                                <li><a href="#art" @click="setActiveSection('art')">Art</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#about" @click="setActiveSection('about')">About</a></li>
                     </ul>
                 </nav>
 
-                <div class="hero-content" v-if="activeSection === 'home'">
+                <div class="hero-content">
                     <h2 class="photographer-name">DIMITRIS<br>KARTSAGKOULIS</h2>
                 </div>
             </div>
@@ -65,11 +74,74 @@
                     </div>
                 </section>
 
+                <section id="projects" v-show="activeSection === 'projects'" class="projects-section">
+                    <nav class="projects-header">
+                        <h2>PROJECTS</h2>
+                    </nav>
+
+                    <main class="projects-categories">
+                        <a href="#" @click.prevent="selectCategory('interior')" class="category-link">interior</a>
+                        <a href="#" @click.prevent="selectCategory('fashion-portraits')" class="category-link">fashion/portraits</a>
+                        <a href="#" @click.prevent="selectCategory('bts-stage')" class="category-link">bts/stage</a>
+                        <a href="#" @click.prevent="selectCategory('commercial')" class="category-link">commercial</a>
+                    </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
+                <section id="art" v-show="activeSection === 'art'" class="art-section">
+                    <nav class="art-header">
+                        <h2>ART</h2>
+                    </nav>
+
+                    <main class="art-categories">
+                        <a href="#" @click.prevent="selectCategory('intimate')" class="category-link">intimate</a>
+                        <a href="#" @click.prevent="selectCategory('attached-body')" class="category-link">attached body</a>
+                        <a href="#" @click.prevent="selectCategory('flora-scarf')" class="category-link">flora scarf collection</a>
+                        <a href="#" @click.prevent="selectCategory('analogue-diary')" class="category-link">analogue diary</a>
+                    </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
                 <section id="about" v-show="activeSection === 'about'" class="about-section">
-                    <div class="about-content">
-                        <h2>About</h2>
-                        <p>{{ aboutText }}</p>
-                    </div>
+                    <nav class="about-header">
+                        <h2>ABOUT</h2>
+                    </nav>
+
+                    <main class="about-main">
+                        <div class="about-left">
+                            <div class="about-top">
+                                <div class="about-photo">
+                                    <img src="WEBSITE CONTENT/PHOTOS/ABOUT/_MG_5725uniwa.jpg" alt="Dimitris Kartsagkoulis">
+                                </div>
+                                <div class="about-title">
+                                    <h3>PHOTOGRAPHER, VISUAL ARTIST<br>BASED IN ATHENS, GR</h3>
+                                </div>
+                            </div>
+                            <div class="about-bio">
+                                <p>BORN AND RAISED IN SOUTHERN GREECE, A PHOTOGRAPHY AND AUDIOVISUAL ARTS GRADUATE FROM THE UNIVERSITY OF WEST ATTICA. MY WORK MOVES BETWEEN ADVERTISING, FASHION, AND INTERIOR ARCHITECTURE, WHERE I EXPERIMENT WITH FORM, TEXTURE, AND LIGHT TO CREATE IMAGES THAT ARE BOTH INTIMATE AND CONCEPTUAL. PASSIONATE ABOUT ANALOG PROCESSES, I SEEK TO MERGE ARTISTIC EXPERIMENTATION WITH CONTEMPORARY VISUAL CULTURE, SHAPING PHOTOGRAPHY AS BOTH A PERSONAL LANGUAGE AND A COLLABORATIVE MEDIUM.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-right">
+                            <div class="contact-button">
+                                <span>contact</span>
+                            </div>
+                            <div class="contact-info">
+                                <p>dimitris.kartsagoulis@yahoo.com</p>
+                                <p class="instagram">dimitris.karts</p>
+                            </div>
+                        </div>
+                    </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
                 </section>
             </main>
         </div>
