@@ -134,6 +134,10 @@
                         <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9429.JPG" alt="Interior 14"></div>
                         <div class="gallery-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/interior/IMG_9468.JPG" alt="Interior 15"></div>
                     </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
                 </section>
 
                 <section id="fashion-portraits" v-show="activeSection === 'fashion-portraits'" class="fashion-section">
@@ -141,21 +145,343 @@
                         <h2>fashion/portraits</h2>
                     </nav>
 
-                    <div class="project-button">
-                        <span>Andrew</span>
+                    <!-- Andrew Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>Andrew</span>
+                        </div>
+                        <div class="fashion-gallery">
+                            <div class="fashion-row">
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_0952.JPG" alt="Andrew 1"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_1010.JPG" alt="Andrew 2"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_0448-1.jpg" alt="Andrew 3"></div>
+                            </div>
+                            <div class="fashion-row">
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_0473.jpg" alt="Andrew 4"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_0912.jpg" alt="Andrew 5"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/0003.jpg" alt="Andrew 6"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <main class="fashion-gallery">
-                        <div class="fashion-row-1">
-                            <div class="fashion-item large"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05636.JPG" alt="Fashion 1"></div>
-                            <div class="fashion-item medium"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05650.JPG" alt="Fashion 2"></div>
-                            <div class="fashion-item small"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05656.JPG" alt="Fashion 3"></div>
+                    <!-- Flora Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>Flora</span>
                         </div>
-                        <div class="fashion-row-2">
-                            <div class="fashion-item medium-left"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_0952.JPG" alt="Fashion 4"></div>
-                            <div class="fashion-item medium-right"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_1010.JPG" alt="Fashion 5"></div>
+                        <div class="fashion-gallery">
+                            <div class="fashion-row">
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_9326-1.jpg" alt="Flora 1"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_9326-2.jpg" alt="Flora 2"></div>
+                            </div>
+                            <div class="fashion-row">
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_9326-4.jpg" alt="Flora 3"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/IMG_9326-5.jpg" alt="Flora 4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sony Workshop Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>Sony Workshop</span>
+                        </div>
+                        <div class="fashion-gallery">
+                            <div class="fashion-row">
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05636.JPG" alt="Sony 1"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05650.JPG" alt="Sony 2"></div>
+                                <div class="fashion-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/fashion/DSC05656.JPG" alt="Sony 3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
+                <section id="bts-stage" v-show="activeSection === 'bts-stage'" class="bts-section">
+                    <nav class="bts-header">
+                        <h2>bts/stage</h2>
+                    </nav>
+
+                    <!-- boukala' short film Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>boukala' short film</span>
+                        </div>
+                        <div class="bts-gallery">
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_3218.JPG" alt="boukala 1"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_3239.JPG" alt="boukala 2"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/img20230516_18020780 copy.jpg" alt="boukala 3"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/img20230516_18135202 copy.jpg" alt="boukala 4"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/img20230516_18135202 copy2.jpg" alt="boukala 5"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/img20230516_18175121 copy.jpg" alt="boukala 6"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/img20230516_18550377 copy.jpg" alt="boukala 7"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/img20230516_19113350 copy4.jpg" alt="boukala 8"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maria' YAMA - Music Video Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>Maria' YAMA - Music Video</span>
+                        </div>
+                        <div class="bts-gallery">
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7062.JPG" alt="YAMA 1"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7074.JPG" alt="YAMA 2"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7078.JPG" alt="YAMA 3"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7124.JPG" alt="YAMA 4"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7125.JPG" alt="YAMA 5"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7131.JPG" alt="YAMA 6"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7145.JPG" alt="YAMA 7"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7165.JPG" alt="YAMA 8"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7183.JPG" alt="YAMA 9"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7201.JPG" alt="YAMA 10"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7225.JPG" alt="YAMA 11"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7272.JPG" alt="YAMA 12"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7280.JPG" alt="YAMA 13"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7303.JPG" alt="YAMA 14"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7443.JPG" alt="YAMA 15"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7698.JPG" alt="YAMA 16"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7718.JPG" alt="YAMA 17"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7740.JPG" alt="YAMA 18"></div>
+                            </div>
+                            <div class="bts-row">
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7748.JPG" alt="YAMA 19"></div>
+                                <div class="bts-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/bts/IMG_7811.JPG" alt="YAMA 20"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
+                <section id="commercial" v-show="activeSection === 'commercial'" class="commercial-section">
+                    <nav class="commercial-header">
+                        <h2>commercial</h2>
+                    </nav>
+
+                    <!-- TUSSO Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>TUSSO</span>
+                        </div>
+                        <div class="commercial-gallery">
+                            <div class="commercial-row">
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/001-2.jpg" alt="TUSSO 1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filoktitis Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>Filoktitis</span>
+                        </div>
+                        <div class="commercial-gallery">
+                            <div class="commercial-row">
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/3. Αλκοολούχο.JPG" alt="Filoktitis 1"></div>
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/026-2.JPG" alt="Filoktitis 2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paul Sarz Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>Paul Sarz</span>
+                        </div>
+                        <div class="commercial-gallery">
+                            <div class="commercial-row">
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/IMG_5473.jpg" alt="Paul Sarz 1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jewellery Section -->
+                    <div class="project-section">
+                        <div class="project-title">
+                            <span>Jewellery</span>
+                        </div>
+                        <div class="commercial-gallery">
+                            <div class="commercial-row">
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/IMG_9733.png" alt="Jewellery 1"></div>
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/IMG_9996.png" alt="Jewellery 2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
+                <section id="intimate" v-show="activeSection === 'intimate'" class="intimate-section">
+                    <nav class="intimate-header">
+                        <h2>intimate</h2>
+                    </nav>
+
+                    <div class="intimate-description">
+                        <p>Intimate is a photographic series that employs self-portraiture as a reflection of personal moments and emotions. The use of red lighting plays a central role, symbolizing intense psychological states such as love and anger. By abstracting the body, the series explores how fragments of the figure emerge and recede, suggesting that intimacy lies not in the completeness of form, but in the tension between what is revealed and what remains hidden.</p>
+                    </div>
+
+                    <main class="intimate-gallery">
+                        <div class="intimate-row-asymmetric">
+                            <div class="intimate-item large-left"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis1.jpg" alt="Intimate 1"></div>
+                            <div class="intimate-column-right">
+                                <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis2.jpg" alt="Intimate 2"></div>
+                                <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis3.jpg" alt="Intimate 3"></div>
+                            </div>
+                        </div>
+                        <div class="intimate-row">
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis4.jpg" alt="Intimate 4"></div>
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis5.jpg" alt="Intimate 5"></div>
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis6.jpg" alt="Intimate 6"></div>
+                        </div>
+                        <div class="intimate-row">
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis7.jpg" alt="Intimate 7"></div>
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis8.jpg" alt="Intimate 8"></div>
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis9.jpg" alt="Intimate 9"></div>
+                        </div>
+                        <div class="intimate-row">
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis10.jpg" alt="Intimate 10"></div>
+                            <div class="intimate-item"><img src="WEBSITE CONTENT/PHOTOS/ART/intimate/DimitrisKartsagkoulis11.jpg" alt="Intimate 11"></div>
                         </div>
                     </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
+                <section id="attached-body" v-show="activeSection === 'attached-body'" class="attached-section">
+                    <nav class="attached-header">
+                        <h2>attached body</h2>
+                    </nav>
+
+                    <div class="attached-description">
+                        <p>Attached Body is a dialogue between body and landscape, where self-portraiture becomes an act of return to origin. By repositioning the body within nature, the work seeks intimacy with the land, blurring the boundary between human form and environment.</p>
+                        <p>Claustrophobic framings overwhelm the image with detail, mirroring states of fear and inner turbulence, while the harsh light sculpts the body into a living monument. Through this process, Attached Body transforms into a meditation on vulnerability, harmony, and the search for belonging within nature. The abstract body depiction connotes the exploration of the mode a fragment could represent a whole.</p>
+                    </div>
+
+                    <main class="attached-gallery">
+                        <div class="attached-row">
+                            <div class="attached-item full-width"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/IMG_7620.JPG" alt="Attached Body 1"></div>
+                        </div>
+                        <div class="attached-row">
+                            <div class="attached-item"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/IMG_6940.JPG" alt="Attached Body 2"></div>
+                            <div class="attached-item"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/IMG_6998.JPG" alt="Attached Body 3"></div>
+                        </div>
+                        <div class="attached-row">
+                            <div class="attached-item"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/IMG_7518.JPG" alt="Attached Body 4"></div>
+                            <div class="attached-item"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/IMG_7809-2.JPG" alt="Attached Body 5"></div>
+                        </div>
+                    </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
+                <section id="flora-scarf" v-show="activeSection === 'flora-scarf'" class="flora-section">
+                    <nav class="flora-header">
+                        <h2>FLORA Scarf Collection</h2>
+                    </nav>
+
+                    <div class="flora-description">
+                        <p>FLORA the Scarf Collection was created by the idea of using photographs of flowers that I took, turning them into timeless pieces. FLORA is a wearable archive of nature. Photographs of flowers are transformed into patterns that move beyond the frame, reimagined as timeless scarves. Each piece becomes both an image and an object, carrying traces of fragility, vibrancy, and growth. Through this transformation, FLORA explores how photography can shift from a medium of observation into one of embodiment turning the act of seeing into the act of wearing.</p>
+                    </div>
+
+                    <main class="flora-gallery">
+                        <div class="flora-row">
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (1).jpeg" alt="Flora Thumbnail 1"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (2).jpeg" alt="Flora Thumbnail 2"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (3).jpeg" alt="Flora Thumbnail 3"></div>
+                        </div>
+                        <div class="flora-row">
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (4).jpeg" alt="Flora Thumbnail 4"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (5).jpeg" alt="Flora Thumbnail 5"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (6).jpeg" alt="Flora Thumbnail 6"></div>
+                        </div>
+                        <div class="flora-row">
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (7).jpeg" alt="Flora Thumbnail 7"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (8).jpeg" alt="Flora Thumbnail 8"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/thumbnail (9).jpeg" alt="Flora Thumbnail 9"></div>
+                        </div>
+                        <div class="flora-row">
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1128.JPG" alt="Flora 1"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1143.JPG" alt="Flora 2"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1236.JPG" alt="Flora 3"></div>
+                        </div>
+                        <div class="flora-row">
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1258.JPG" alt="Flora 4"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1290.JPG" alt="Flora 5"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1314.JPG" alt="Flora 6"></div>
+                        </div>
+                        <div class="flora-row">
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1381.JPG" alt="Flora 7"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1444.JPG" alt="Flora 8"></div>
+                            <div class="flora-item"><img src="WEBSITE CONTENT/PHOTOS/ART/flora scarf collection/IMG_1474.JPG" alt="Flora 9"></div>
+                        </div>
+                    </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
+                </section>
+
+                <section id="analogue-diary" v-show="activeSection === 'analogue-diary'" class="analogue-section">
+                    <nav class="analogue-header">
+                        <h2>analogue diary</h2>
+                    </nav>
+
+                    <div class="analogue-description">
+                        <p>Analogue Diary is a nostalgic outtake on life, begun at the age of sixteen as a way to preserve fleeting moments. Through the grain and imperfections of film, the series captures fragments of places, objects, and atmospheres that resonate with memory. Each photograph becomes a quiet entr, not a record of events, but a tender reflection on time, loss, and the persistence of beauty in the ordinary</p>
+                    </div>
+
+                    <main class="analogue-gallery">
+                        <div class="analogue-row full">
+                            <div class="analogue-item"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0021_%23%23%23000011650021.jpg" alt="Analogue 1"></div>
+                        </div>
+                        <div class="analogue-row split">
+                            <div class="analogue-item small"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0012_12000010970012.jpg" alt="Analogue 2"></div>
+                            <div class="analogue-item large"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0009_12000011660009.jpg" alt="Analogue 3"></div>
+                        </div>
+                        <div class="analogue-row">
+                            <div class="analogue-item"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0005_5000002000005.jpg" alt="Analogue 4"></div>
+                            <div class="analogue-item"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0011_14000011660011.jpg" alt="Analogue 5"></div>
+                            <div class="analogue-item"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0018_20000002000018.jpg" alt="Analogue 6"></div>
+                        </div>
+                        <div class="analogue-row">
+                            <div class="analogue-item"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0018_35000011650018.jpg" alt="Analogue 7"></div>
+                            <div class="analogue-item"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0034_E000011660034.jpg" alt="Analogue 8"></div>
+                            <div class="analogue-item"><img src="WEBSITE CONTENT/PHOTOS/ART/analogue diary/0037_%23%23%23000011660037.jpg" alt="Analogue 9"></div>
+                        </div>
+                    </main>
+
+                    <footer class="back-link">
+                        <a href="#" @click.prevent="goBack">&lt;back</a>
+                    </footer>
                 </section>
 
                 <section id="about" v-show="activeSection === 'about'" class="about-section">
