@@ -86,7 +86,7 @@ body {
 /* Portfolio View */
 .portfolio-view {
     min-height: 100vh;
-    background: #ffb849;
+    background: #ffb899;
     position: relative;
     animation: fadeIn 0.5s ease-in;
 }
@@ -406,7 +406,7 @@ body {
 /* Projects Section */
 .projects-section {
     min-height: 100vh;
-    background: #e8e8e0;
+    background: #FFF8ED;
     position: relative;
     display: flex;
     align-items: center;
@@ -457,8 +457,8 @@ body {
 }
 
 .back-link a {
-    font-family: 'Mistral', cursive;
-    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    font-size: 2.25rem;
     color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -596,10 +596,6 @@ body {
 }
 
 .contact-button {
-    border: 3px solid #000;
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -607,19 +603,10 @@ body {
     transition: all 0.3s ease;
 }
 
-.contact-button span {
-    font-family: 'Dubai', sans-serif;
-    font-weight: normal;
-    font-size: 1.7rem;
-    color: #000;
-}
-
-.contact-button:hover {
-    background: #000;
-}
-
-.contact-button:hover span {
-    color: #FFF8ED;
+.contact-button img {
+    height: 88px;
+    width: auto;
+    display: block;
 }
 
 .contact-info p {
@@ -663,27 +650,14 @@ body {
     margin: 2rem auto;
     text-align: center;
     width: fit-content;
-    border: 3px solid #000;
-    border-radius: 50px;
-    padding: 0.8rem 2.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: #FFF8ED;
 }
 
-.time-button span {
-    font-family: 'Dubai', sans-serif;
-    font-weight: normal;
-    font-size: 1.5rem;
-    color: #000;
-}
-
-.time-button:hover {
-    background: #000;
-}
-
-.time-button:hover span {
-    color: #FFF8ED;
+.time-button img {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 .interior-gallery {
@@ -704,11 +678,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.02);
 }
 
 /* Fashion/Portraits Section */
@@ -743,17 +712,14 @@ body {
     margin: 2rem auto;
     text-align: center;
     width: fit-content;
-    border: 3px solid #000;
-    border-radius: 50px;
-    padding: 0.8rem 2.5rem;
-    background: #FFF8ED;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.project-title span {
-    font-family: 'Dubai', sans-serif;
-    font-weight: normal;
-    font-size: 1.5rem;
-    color: #000;
+.project-title img {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 .fashion-gallery {
@@ -782,11 +748,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.fashion-item:hover img {
-    transform: scale(1.02);
 }
 
 /* BTS/Stage Section */
@@ -838,11 +799,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.bts-item:hover img {
-    transform: scale(1.02);
 }
 
 /* Commercial Section */
@@ -894,11 +850,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.commercial-item:hover img {
-    transform: scale(1.02);
 }
 
 /* Intimate Section */
@@ -981,11 +932,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.intimate-item:hover img {
-    transform: scale(1.02);
 }
 
 /* Attached Body Section */
@@ -1056,11 +1002,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.attached-item:hover img {
-    transform: scale(1.02);
 }
 
 /* Flora Scarf Collection Section */
@@ -1126,11 +1067,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.flora-item:hover img {
-    transform: scale(1.02);
 }
 
 /* Analogue Diary Section */
@@ -1214,11 +1150,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.analogue-item:hover img {
-    transform: scale(1.02);
 }
 
 @media (max-width: 480px) {
