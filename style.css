@@ -674,52 +674,62 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    height: 400px;
+    align-items: center;
 }
 
 .interior-row-asymmetric .gallery-item {
+    position: relative;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
 }
 
 .interior-row-asymmetric .gallery-item img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .interior-row-equal {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    height: 400px;
+    align-items: center;
 }
 
 .interior-row-equal .gallery-item {
+    position: relative;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
 }
 
 .interior-row-equal .gallery-item img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .interior-row-full {
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .interior-row-full .gallery-item {
-    max-width: 800px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interior-row-full .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .gallery-item {
@@ -844,22 +854,42 @@ body {
 }
 
 .yama-gallery .bts-row {
-    grid-template-columns: repeat(2, 1fr);
-    height: 500px;
+    align-items: center;
 }
 
 .yama-gallery .bts-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .yama-gallery .bts-item img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.yama-row-2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.yama-row-2 .bts-item:first-child {
+    grid-column: span 1;
+}
+
+.yama-row-2 .bts-item:last-child {
+    grid-column: span 2;
+}
+
+.yama-row-2-reverse {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.yama-row-2-reverse .bts-item:first-child {
+    grid-column: span 2;
+}
+
+.yama-row-2-reverse .bts-item:last-child {
+    grid-column: span 1;
 }
 
 /* Boukala Gallery Layout */
@@ -875,17 +905,28 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
+    align-items: center;
+}
+
+.boukala-asymmetric .bts-item.small-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boukala-large-bottom {
-    display: flex;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .boukala-large-bottom .bts-item {
     width: 100%;
+}
+
+.boukala-large-bottom .bts-item img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .boukala-final-layout {
