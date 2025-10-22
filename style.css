@@ -814,6 +814,82 @@ body {
     display: block;
 }
 
+/* Andrew Gallery Custom Layouts */
+.andrew-row-asymmetric {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    height: 600px;
+}
+
+.andrew-row-asymmetric .fashion-item.large-left {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.andrew-row-asymmetric .fashion-item.large-left img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.andrew-column-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.andrew-column-right .fashion-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.andrew-column-right .fashion-item img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.andrew-row-equal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.andrew-row-single {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* Flora Fashion Gallery */
+.flora-fashion-row-single {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* Sony Gallery */
+.sony-row-equal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sony-row-single {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
 /* BTS/Stage Section */
 .bts-section {
     min-height: 100vh;
