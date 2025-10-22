@@ -790,6 +790,80 @@ body {
     align-items: start;
 }
 
+.yama-gallery .bts-row {
+    grid-template-columns: repeat(2, 1fr);
+    height: 500px;
+}
+
+.yama-gallery .bts-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.yama-gallery .bts-item img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Boukala Gallery Layout */
+.boukala-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.boukala-asymmetric {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.boukala-large-bottom {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.boukala-large-bottom .bts-item {
+    width: 100%;
+}
+
+.boukala-final-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.boukala-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.boukala-right-large {
+    display: flex;
+    align-items: stretch;
+}
+
+.boukala-right-large .bts-item {
+    width: 100%;
+    height: 100%;
+}
+
+.boukala-right-large .bts-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .bts-item {
     position: relative;
     overflow: hidden;
