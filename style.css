@@ -664,8 +664,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 4rem;
 }
 
 .gallery-item {
@@ -723,12 +724,12 @@ body {
 }
 
 .fashion-gallery {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
 
 .fashion-row {
@@ -774,12 +775,12 @@ body {
 }
 
 .bts-gallery {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
 
 .bts-row {
@@ -825,12 +826,12 @@ body {
 }
 
 .commercial-gallery {
-    max-width: 1400px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
 
 .commercial-row {
@@ -890,12 +891,12 @@ body {
 }
 
 .intimate-gallery {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
 
 .intimate-row-asymmetric {
@@ -973,12 +974,12 @@ body {
 }
 
 .attached-gallery {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
 
 .attached-row {
@@ -1042,12 +1043,12 @@ body {
 }
 
 .flora-gallery {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
 
 .flora-row {
@@ -1107,12 +1108,12 @@ body {
 }
 
 .analogue-gallery {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
 
 .analogue-row.full {
