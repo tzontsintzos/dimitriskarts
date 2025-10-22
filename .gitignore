@@ -21,5 +21,6 @@ node_modules/
 dist/
 build/
 
-# Website content (photos, videos, assets)
-WEBSITE CONTENT/
+# Videos and large files (images will be deployed)
+WEBSITE CONTENT/VIDEO/
+WEBSITE CONTENT/LAYOUT/
