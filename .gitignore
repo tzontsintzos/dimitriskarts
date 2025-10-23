@@ -1,8 +1,3 @@
-# Video files
-*.mp4
-*.mov
-*.avi
-*.mkv
 
 # OS files
 .DS_Store
@@ -22,7 +17,7 @@ dist/
 build/
 
 # Videos and large files (images will be deployed)
-WEBSITE CONTENT/VIDEO/
 WEBSITE CONTENT/LAYOUT/
 WEBSITE CONTENT/PHOTOS_backup/
 WEBSITE CONTENT/ΟΔΗΓΙΕΣ/
+
