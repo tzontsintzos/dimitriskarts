@@ -1617,3 +1617,113 @@ body {
         padding-top: 3rem;
     }
 }
+
+/* Enhanced Mobile Optimizations */
+@media (max-width: 768px) {
+    /* Menu Overlay Improvements */
+    .menu-overlay {
+        padding: 2rem 1.5rem;
+    }
+
+    .photographer-name {
+        font-size: 1.8rem !important;
+        letter-spacing: 1px;
+        bottom: 2rem;
+        right: 1.5rem;
+        max-width: 80%;
+        text-align: right;
+        line-height: 1.2;
+    }
+
+    .nav-menu {
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .nav-menu li a {
+        font-size: 2.5rem;
+        padding: 0.5rem 0;
+    }
+
+    /* Close Button */
+    .close-toggle {
+        font-size: 2.5rem;
+        width: 40px;
+        height: 40px;
+        padding: 0.5rem;
+    }
+
+    /* Video Scaling */
+    .background-video {
+        object-fit: cover;
+        min-height: 100vh;
+    }
+
+    /* Touch-friendly Buttons */
+    .cube-toggle,
+    .contact-button,
+    .time-button {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Gallery Spacing */
+    .bts-gallery,
+    .fashion-gallery,
+    .interior-gallery {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .gallery-item img,
+    .bts-item img,
+    .fashion-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra Small Devices */
+    .photographer-name {
+        font-size: 1.3rem !important;
+        letter-spacing: 0.5px;
+        bottom: 1.5rem;
+        right: 1rem;
+        max-width: 70%;
+    }
+
+    .nav-menu li a {
+        font-size: 2rem;
+    }
+
+    .header-logo {
+        height: 50px;
+    }
+
+    .close-toggle {
+        font-size: 2rem;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    /* Improved Gallery Layouts */
+    .gallery-section {
+        padding: 1rem;
+    }
+
+    .circle-container {
+        padding: 1rem;
+    }
+
+    .circle-item {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-item img {
+        width: 100%;
+        height: 100%;
+    }
+}
