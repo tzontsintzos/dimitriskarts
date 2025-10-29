@@ -912,18 +912,20 @@ body {
 }
 
 .yama-gallery .bts-row {
-    align-items: center;
+    align-items: stretch;
 }
 
 .yama-gallery .bts-item {
     position: relative;
     overflow: hidden;
+    display: flex;
 }
 
 .yama-gallery .bts-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .yama-row-2 {
