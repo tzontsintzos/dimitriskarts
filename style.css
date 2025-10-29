@@ -39,7 +39,7 @@ body {
 
 .logo h1 {
     font-family: 'Mistral', cursive;
-    font-size: 135px;
+    font-size: 67.5pt;
     font-weight: normal;
     color: #000;
     margin: 0;
@@ -56,8 +56,8 @@ body {
 }
 
 .cube {
-    width: 40px;
-    height: 40px;
+    width: 36pt;
+    height: 36pt;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
@@ -69,19 +69,19 @@ body {
 
 .cube-face {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 36pt;
+    height: 36pt;
     border: 2px solid #000;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
 }
 
-.cube-face:nth-child(1) { transform: rotateY(0deg) translateZ(20px); }
-.cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(20px); }
-.cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(20px); }
-.cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(20px); }
-.cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(20px); }
-.cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(20px); }
+.cube-face:nth-child(1) { transform: rotateY(0deg) translateZ(18pt); }
+.cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(18pt); }
+.cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(18pt); }
+.cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(18pt); }
+.cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(18pt); }
+.cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(18pt); }
 
 /* Portfolio View */
 .portfolio-view {
@@ -117,7 +117,7 @@ body {
 
 .close-toggle {
     font-family: 'Caveat', cursive;
-    font-size: 35px;
+    font-size: 30pt;
     cursor: pointer;
     color: #000;
     padding: 0.5rem;
@@ -160,7 +160,7 @@ body {
     color: #000;
     font-family: 'Dubai', sans-serif;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 30pt;
     transition: all 0.3s ease;
     position: relative;
     display: block;
@@ -221,7 +221,7 @@ body {
 .photographer-name {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 5rem;
+    font-size: 75pt;
     letter-spacing: 3px;
     line-height: 1.1;
     text-transform: uppercase;
@@ -435,7 +435,7 @@ body {
 .projects-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 30pt;
     color: #000;
     margin: 0;
     letter-spacing: 2px;
@@ -451,7 +451,7 @@ body {
 .category-link {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 36pt;
     color: #000;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -470,7 +470,7 @@ body {
 
 .back-link a {
     font-family: 'Caveat', cursive;
-    font-size: 2.25rem;
+    font-size: 30pt;
     color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -500,7 +500,7 @@ body {
 .art-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 30pt;
     color: #000;
     margin: 0;
     letter-spacing: 2px;
@@ -533,7 +533,7 @@ body {
 .about-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 30pt;
     color: #000;
     margin: 0;
     letter-spacing: 2px;
@@ -580,7 +580,7 @@ body {
 .about-title h3 {
     font-family: 'Dubai', sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 45pt;
     color: #000;
     margin: 0;
     line-height: 1.4;
@@ -593,7 +593,7 @@ body {
 .about-bio p {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 0.95rem;
+    font-size: 13pt;
     color: #000;
     line-height: 1.5;
     margin: 0;
@@ -616,7 +616,7 @@ body {
 }
 
 .contact-button img {
-    height: 88px;
+    height: 36pt;
     width: auto;
     display: block;
 }
@@ -624,7 +624,7 @@ body {
 .contact-info p {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.15rem;
+    font-size: 20pt;
     color: #000;
     margin: 0.5rem 0;
     text-align: center;
@@ -651,7 +651,7 @@ body {
 .interior-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -773,7 +773,7 @@ body {
 .fashion-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -919,7 +919,7 @@ body {
 .bts-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -1075,7 +1075,7 @@ body {
 .commercial-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -1130,7 +1130,7 @@ body {
 .intimate-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -1244,7 +1244,7 @@ body {
 .attached-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -1314,7 +1314,7 @@ body {
 .flora-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -1414,7 +1414,7 @@ body {
 .analogue-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 1px;
@@ -1706,6 +1706,98 @@ body {
     .commercial-header h2 {
         font-size: 1.8rem;
     }
+
+    /* Fashion Section Mobile */
+    .fashion-section {
+        padding: 2rem 1rem;
+    }
+
+    .fashion-gallery {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .fashion-row,
+    .andrew-row-asymmetric,
+    .flora-row-asymmetric,
+    .sony-row {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    /* BTS Section Mobile */
+    .bts-section {
+        padding: 2rem 1rem;
+    }
+
+    .bts-gallery {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .bts-row,
+    .yama-grid,
+    .boukala-grid,
+    .boukala-asymmetric,
+    .boukala-large-bottom,
+    .boukala-final-layout {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    /* Art Galleries Mobile */
+    .intimate-section,
+    .attached-section,
+    .flora-section,
+    .analogue-section {
+        padding: 2rem 1rem;
+    }
+
+    .intimate-gallery,
+    .attached-gallery,
+    .flora-gallery,
+    .analogue-gallery {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .intimate-row,
+    .attached-row,
+    .flora-row,
+    .analogue-row {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    /* Section Headers Mobile */
+    .fashion-header,
+    .bts-header,
+    .intimate-header,
+    .attached-header,
+    .flora-header,
+    .analogue-header {
+        text-align: center;
+    }
+
+    .fashion-header h2,
+    .bts-header h2,
+    .intimate-header h2,
+    .attached-header h2,
+    .flora-header h2,
+    .analogue-header h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Project Titles Mobile */
+    .project-section .project-title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-title img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1766,6 +1858,52 @@ body {
     }
 
     .commercial-header h2 {
+        font-size: 1.5rem;
+    }
+
+    /* All Sections Extra Small */
+    .fashion-section,
+    .bts-section,
+    .intimate-section,
+    .attached-section,
+    .flora-section,
+    .analogue-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .fashion-gallery,
+    .bts-gallery,
+    .intimate-gallery,
+    .attached-gallery,
+    .flora-gallery,
+    .analogue-gallery {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .fashion-row,
+    .bts-row,
+    .intimate-row,
+    .attached-row,
+    .flora-row,
+    .analogue-row,
+    .andrew-row-asymmetric,
+    .flora-row-asymmetric,
+    .sony-row,
+    .yama-grid,
+    .boukala-grid,
+    .boukala-asymmetric,
+    .boukala-large-bottom,
+    .boukala-final-layout {
+        gap: 1rem !important;
+    }
+
+    .fashion-header h2,
+    .bts-header h2,
+    .intimate-header h2,
+    .attached-header h2,
+    .flora-header h2,
+    .analogue-header h2 {
         font-size: 1.5rem;
     }
 

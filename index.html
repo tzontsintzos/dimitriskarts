@@ -43,7 +43,7 @@
             <div class="menu-overlay" v-if="activeSection === 'home'">
                 <nav class="main-nav">
                     <ul class="nav-menu">
-                        <li><a href="#home" @click="setActiveSection('home')">Home</a></li>
+                        <li><a href="#" @click.prevent="closePortfolio">Home</a></li>
                         <li class="has-submenu">
                             <a href="#work" @click.prevent="toggleWorkMenu" class="menu-toggle">
                                 Work
