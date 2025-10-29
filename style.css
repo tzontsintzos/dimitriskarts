@@ -257,7 +257,6 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    cursor: pointer;
 }
 
 .portfolio-item:hover {
@@ -578,7 +577,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -639,7 +637,6 @@ body {
     margin: 2rem auto;
     text-align: center;
     width: fit-content;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -724,7 +721,6 @@ body {
 .gallery-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .gallery-item img {
@@ -765,7 +761,6 @@ body {
     margin: 2rem auto;
     text-align: center;
     width: fit-content;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -794,7 +789,6 @@ body {
 .fashion-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .fashion-item img {
@@ -813,17 +807,16 @@ body {
 }
 
 .andrew-row-asymmetric .fashion-item.large-left {
-    flex: 1.5;
+    flex: 1.0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .andrew-row-asymmetric .fashion-item.large-left img {
-    width: auto;
+    width: 100%;
     height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .andrew-column-right {
@@ -1026,7 +1019,6 @@ body {
 .bts-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .bts-item img {
@@ -1081,7 +1073,6 @@ body {
 .commercial-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .commercial-item img {
@@ -1114,14 +1105,15 @@ body {
 }
 
 .intimate-description {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 3rem auto;
+    padding: 0 10rem;
     text-align: left;
 }
 
 .intimate-description p {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 1.6;
     color: #000;
@@ -1144,17 +1136,16 @@ body {
 }
 
 .intimate-item.large-left {
-    flex: 1.5;
+    flex: 1.0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .intimate-item.large-left img {
-    width: auto;
+    width: 100%;
     height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .intimate-column-right {
@@ -1195,7 +1186,6 @@ body {
 .intimate-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .intimate-item img {
@@ -1228,14 +1218,15 @@ body {
 }
 
 .attached-description {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 3rem auto;
+    padding: 0 10rem;
     text-align: left;
 }
 
 .attached-description p {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 1.6;
     color: #000;
@@ -1265,7 +1256,6 @@ body {
 .attached-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .attached-item img {
@@ -1300,12 +1290,13 @@ body {
 .flora-description {
     max-width: 900px;
     margin: 3rem auto;
+    padding: 0 10rem;
     text-align: left;
 }
 
 .flora-description p {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 1.6;
     color: #000;
@@ -1365,7 +1356,6 @@ body {
 .flora-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .flora-item img {
@@ -1398,14 +1388,15 @@ body {
 }
 
 .analogue-description {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 3rem auto;
+    padding: 0 10rem;
     text-align: left;
 }
 
 .analogue-description p {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 1.6;
     color: #000;
@@ -1441,7 +1432,6 @@ body {
 .analogue-item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .analogue-item img {
@@ -1635,9 +1625,7 @@ body {
     }
 
     /* Touch-friendly Buttons */
-    .cube-toggle,
-    .contact-button,
-    .time-button {
+    .cube-toggle {
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
     }
