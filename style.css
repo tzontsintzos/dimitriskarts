@@ -51,37 +51,22 @@ body {
     top: 2rem;
     right: 2rem;
     cursor: pointer;
-    perspective: 1000px;
     z-index: 1;
 }
 
 .cube {
-    width: 36pt;
-    height: 36pt;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.3s ease;
+    width: 30pt;
+    height: 30pt;
+    border: 2.5px solid #000;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 0.3s ease;
 }
 
 .cube:hover {
-    transform: scale(1.1);
+    opacity: 0.6;
+    transform: scale(1.05);
 }
-
-.cube-face {
-    position: absolute;
-    width: 36pt;
-    height: 36pt;
-    border: 2px solid #000;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-}
-
-.cube-face:nth-child(1) { transform: rotateY(0deg) translateZ(18pt); }
-.cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(18pt); }
-.cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(18pt); }
-.cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(18pt); }
-.cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(18pt); }
-.cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(18pt); }
 
 /* Portfolio View */
 .portfolio-view {
@@ -128,7 +113,7 @@ body {
 }
 
 .close-toggle:hover {
-    transform: scaleY(0.9) scaleX(1.1) scale(1.1);
+    color: #666;
 }
 
 .menu-overlay {
@@ -169,7 +154,6 @@ body {
 
 .nav-menu li a:hover {
     color: #666;
-    transform: translateX(10px);
 }
 
 /* Expandable menu styles */
@@ -242,7 +226,7 @@ body {
 .work-section {
     min-height: 100vh;
     padding: 8rem 2rem 4rem;
-    background: #FFF8ED;
+    background: #FFF;
     backdrop-filter: blur(10px);
 }
 
@@ -277,7 +261,7 @@ body {
 }
 
 .portfolio-item:hover {
-    transform: translateY(-5px);
+    opacity: 0.8;
 }
 
 .portfolio-item img {
@@ -288,7 +272,7 @@ body {
 }
 
 .portfolio-item:hover img {
-    transform: scale(1.05);
+    opacity: 0.8;
 }
 
 .portfolio-item h3 {
@@ -356,21 +340,9 @@ body {
     }
 
     .cube {
-        width: 30px;
-        height: 30px;
+        width: 24pt;
+        height: 24pt;
     }
-
-    .cube-face {
-        width: 30px;
-        height: 30px;
-    }
-
-    .cube-face:nth-child(1) { transform: rotateY(0deg) translateZ(15px); }
-    .cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(15px); }
-    .cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(15px); }
-    .cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(15px); }
-    .cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(15px); }
-    .cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(15px); }
 
     .portfolio-view .logo h1 {
         font-size: 2rem;
@@ -418,7 +390,7 @@ body {
 /* Projects Section */
 .projects-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     display: flex;
     align-items: center;
@@ -459,7 +431,6 @@ body {
 
 .category-link:hover {
     color: #666;
-    transform: scale(1.05);
 }
 
 .back-link {
@@ -483,7 +454,7 @@ body {
 /* Art Section */
 .art-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     display: flex;
     align-items: center;
@@ -515,19 +486,16 @@ body {
 
 /* About Section */
 .about-section {
-    height: 100vh;
-    background: #FFF8ED;
+    min-height: 100vh;
+    background: #FFF;
     position: relative;
-    padding: 1rem 3rem;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    padding: 3rem;
 }
 
 .about-header {
-    position: absolute;
-    top: 1.5rem;
-    right: 3rem;
+    position: relative;
+    text-align: right;
+    margin-bottom: 2rem;
 }
 
 .about-header h2 {
@@ -541,11 +509,10 @@ body {
 
 .about-main {
     display: flex;
-    padding-top: 10rem;
     gap: 3rem;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
-    flex: 1;
+    padding: 0 4rem;
     align-items: flex-start;
 }
 
@@ -580,7 +547,7 @@ body {
 .about-title h3 {
     font-family: 'Dubai', sans-serif;
     font-weight: bold;
-    font-size: 45pt;
+    font-size: 18pt;
     color: #000;
     margin: 0;
     line-height: 1.4;
@@ -592,7 +559,7 @@ body {
 
 .about-bio p {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 13pt;
     color: #000;
     line-height: 1.5;
@@ -602,9 +569,9 @@ body {
 .about-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.8rem;
-    padding-top: 3.5rem;
+    align-self: flex-end;
 }
 
 .contact-button {
@@ -616,7 +583,7 @@ body {
 }
 
 .contact-button img {
-    height: 36pt;
+    height: 72pt;
     width: auto;
     display: block;
 }
@@ -627,7 +594,17 @@ body {
     font-size: 20pt;
     color: #000;
     margin: 0.5rem 0;
-    text-align: center;
+    text-align: left;
+}
+
+.contact-info p a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info p a:hover {
+    color: #666;
 }
 
 .contact-info .instagram {
@@ -637,7 +614,7 @@ body {
 /* Interior Section */
 .interior-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -759,7 +736,7 @@ body {
 /* Fashion/Portraits Section */
 .fashion-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -905,7 +882,7 @@ body {
 /* BTS/Stage Section */
 .bts-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -1061,7 +1038,7 @@ body {
 /* Commercial Section */
 .commercial-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -1116,7 +1093,7 @@ body {
 /* Intimate Section */
 .intimate-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -1230,7 +1207,7 @@ body {
 /* Attached Body Section */
 .attached-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -1300,7 +1277,7 @@ body {
 /* Flora Scarf Collection Section */
 .flora-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -1400,7 +1377,7 @@ body {
 /* Analogue Diary Section */
 .analogue-section {
     min-height: 100vh;
-    background: #FFF8ED;
+    background: #FFF;
     position: relative;
     padding: 3rem;
 }
@@ -1520,8 +1497,7 @@ body {
     }
 
     .about-header {
-        top: 1rem;
-        right: 1rem;
+        text-align: center;
     }
 
     .about-header h2 {
@@ -1530,7 +1506,6 @@ body {
 
     .about-main {
         flex-direction: column;
-        padding-top: 6rem;
         gap: 1.5rem;
     }
 
