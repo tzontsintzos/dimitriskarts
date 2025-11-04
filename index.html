@@ -14,7 +14,7 @@
         <!-- Minimal homepage -->
         <div v-if="!portfolioOpen" class="minimal-home">
             <video autoplay muted loop playsinline class="background-video">
-                <source src="website_colored_compressed.mp4" type="video/mp4">
+                <source src="website_black_white_video_compressed.mp4" type="video/mp4">
             </video>
             <div class="logo">
                 <img src="logo.png" alt="Karts" class="header-logo">
@@ -40,8 +40,8 @@
                         <li class="has-submenu">
                             <a href="#work" @click.prevent="toggleWorkMenu" class="menu-toggle">
                                 Work
-                                <span class="arrow" :class="{ 'arrow-down': workMenuOpen }">∨</span>
                             </a>
+                            <span v-show="workMenuOpen" class="arrow-below-work">∨</span>
                             <ul v-show="workMenuOpen" class="submenu">
                                 <li><a href="#projects" @click="setActiveSection('projects')">Projects</a></li>
                                 <li><a href="#art" @click="setActiveSection('art')">Art</a></li>
@@ -370,8 +370,8 @@
                                 <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/2_paulsarz.png" alt="Paul Sarz 2"></div>
                             </div>
                             <div class="commercial-row">
-                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/3_paulsarz.JPG" alt="Paul Sarz 3"></div>
-                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/4_paulsarz.png" alt="Paul Sarz 4"></div>
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/4_paulsarz.png" alt="Paul Sarz 3"></div>
+                                <div class="commercial-item"><img src="WEBSITE CONTENT/PHOTOS/PROJECTS/commercial/3_paulsarz.jpg" alt="Paul Sarz 4"></div>
                             </div>
                         </div>
                     </div>

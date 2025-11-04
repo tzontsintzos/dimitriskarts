@@ -73,7 +73,7 @@ body {
 /* Portfolio View */
 .portfolio-view {
     min-height: 100vh;
-    background: #ffb899;
+    background: #7ca160;
     position: relative;
     animation: fadeIn 0.5s ease-in;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 .header-logo {
-    height: 60px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
@@ -139,7 +139,7 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none;
-    gap: 0.2rem;
+    gap: 0;
 }
 
 .nav-menu li a {
@@ -147,11 +147,11 @@ body {
     color: #000;
     font-family: 'Dubai', sans-serif;
     font-weight: 700;
-    font-size: 30pt;
+    font-size: 26pt;
     transition: all 0.3s ease;
     position: relative;
     display: block;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
 }
 
 .nav-menu li a:hover {
@@ -180,27 +180,37 @@ body {
     transform: rotate(180deg);
 }
 
+.arrow-below-work {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 1;
+}
+
 .nav-menu .submenu {
     list-style: none;
-    padding-left: 2rem;
-    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    margin-top: -1.5rem;
     overflow: hidden;
 }
 
 .nav-menu .submenu li a {
-    font-size: 1.2rem;
-    padding: 0.3rem 0;
-    color: #333;
+    font-size: 20pt;
+    padding: 0.1rem 0;
+    color: #000;
 }
 
 .nav-menu .submenu li a:hover {
-    color: #000;
+    color: #666;
 }
 
 .hero-content {
     position: absolute;
     bottom: 2%;
-    right: 6rem;
+    right: 7rem;
     color: #000;
 }
 
@@ -380,7 +390,7 @@ body {
     }
 
     .header-logo {
-        height: 70px;
+        height: 90px;
     }
 
     .minimal-home {
@@ -1872,7 +1882,7 @@ body {
     }
 
     .header-logo {
-        height: 50px;
+        height: 65px;
     }
 
     .close-toggle {
