@@ -14,7 +14,7 @@
         <!-- Minimal homepage -->
         <div v-if="!portfolioOpen" class="minimal-home">
             <video autoplay muted loop playsinline class="background-video">
-                <source src="website_black_white_video_compressed.mp4" type="video/mp4">
+                <source src="black_white_video_compressed.mp4" type="video/mp4">
             </video>
             <div class="logo">
                 <img src="logo.png" alt="Karts" class="header-logo">
@@ -30,7 +30,9 @@
                 <div class="logo">
                     <img src="logo.png" alt="Karts" class="header-logo">
                 </div>
-                <div v-if="activeSection === 'home' || activeSection === 'work'" class="close-toggle" @click="closePortfolio">✕</div>
+                <div v-if="activeSection === 'home' || activeSection === 'work'" class="close-toggle" @click="closePortfolio">
+                    <img src="WEBSITE CONTENT/PHOTOS/x_button.png" alt="Close">
+                </div>
             </nav>
 
             <div class="menu-overlay" v-if="activeSection === 'home'">
@@ -439,8 +441,10 @@
                             <div class="attached-item"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/attached3.JPG" alt="Attached Body 3"></div>
                         </div>
                         <div class="attached-row">
-                            <div class="attached-item"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/attached4.JPG" alt="Attached Body 4"></div>
-                            <div class="attached-item"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/attached5.JPG" alt="Attached Body 5"></div>
+                            <div class="attached-item full-width"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/attached4.JPG" alt="Attached Body 4"></div>
+                        </div>
+                        <div class="attached-row">
+                            <div class="attached-item full-width"><img src="WEBSITE CONTENT/PHOTOS/ART/attached body/attached5.JPG" alt="Attached Body 5"></div>
                         </div>
                     </main>
 
