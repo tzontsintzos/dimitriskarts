@@ -5,7 +5,9 @@ createApp({
         return {
             activeSection: 'home',
             workMenuOpen: false,
-            portfolioOpen: false
+            portfolioOpen: false,
+            lastScrollTop: 0,
+            isScrollingDown: false
         }
     },
     methods: {
@@ -59,6 +61,32 @@ createApp({
                 this.portfolioOpen = true;
                 this.activeSection = hash || 'home';
             }
+        },
+        handleScroll() {
+            // Only apply on mobile devices
+            if (window.innerWidth > 768) {
+                // Remove hide classes on desktop
+                const header = document.querySelector('.main-header');
+                if (header) header.classList.remove('hide-on-scroll');
+                return;
+            }
+
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Only hide if scrolling down and past 100px
+            if (currentScrollTop > this.lastScrollTop && currentScrollTop > 100) {
+                // Scrolling down
+                this.isScrollingDown = true;
+                const header = document.querySelector('.main-header');
+                if (header) header.classList.add('hide-on-scroll');
+            } else {
+                // Scrolling up
+                this.isScrollingDown = false;
+                const header = document.querySelector('.main-header');
+                if (header) header.classList.remove('hide-on-scroll');
+            }
+
+            this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
         }
     },
     mounted() {
@@ -67,5 +95,16 @@ createApp({
         window.addEventListener('hashchange', () => {
             this.initFromHash();
         });
+
+        // Add scroll listener for hide-on-scroll functionality
+        window.addEventListener('scroll', this.handleScroll);
+
+        // Also handle window resize
+        window.addEventListener('resize', this.handleScroll);
+    },
+    beforeUnmount() {
+        // Clean up event listeners
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleScroll);
     }
 }).mount('#app');
