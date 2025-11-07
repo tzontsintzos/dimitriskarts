@@ -2058,13 +2058,43 @@ body {
         gap: 1rem;
     }
 
-    /* Section Headers Mobile */
+    /* Section Headers Mobile - Same Layout as Projects/Art */
+    .projects-header,
+    .art-header {
+        top: 2rem;
+        right: 3rem;
+    }
+
+    .interior-header,
+    .fashion-header,
+    .bts-header,
+    .commercial-header,
+    .intimate-header,
+    .attached-header,
+    .flora-header,
+    .analogue-header {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        margin: 0;
+    }
+
+    .projects-header h2,
+    .art-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .interior-header h2,
     .fashion-header h2,
     .bts-header h2,
     .intimate-header h2,
     .attached-header h2,
     .flora-header h2,
     .analogue-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .commercial-header h2 {
         font-size: 1.3rem;
     }
 
@@ -2160,7 +2190,40 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 
-    .commercial-header h2 {
+    /* Section Headers Extra Small - Same Layout as Projects/Art */
+    .projects-header,
+    .art-header {
+        top: 2rem;
+        right: 2.5rem;
+    }
+
+    .interior-header,
+    .fashion-header,
+    .bts-header,
+    .commercial-header,
+    .intimate-header,
+    .attached-header,
+    .flora-header,
+    .analogue-header {
+        position: absolute;
+        top: 2rem;
+        right: 2.5rem;
+        margin: 0;
+    }
+
+    .projects-header h2,
+    .art-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .interior-header h2,
+    .fashion-header h2,
+    .bts-header h2,
+    .commercial-header h2,
+    .intimate-header h2,
+    .attached-header h2,
+    .flora-header h2,
+    .analogue-header h2 {
         font-size: 1.1rem;
     }
 
