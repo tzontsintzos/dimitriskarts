@@ -430,7 +430,7 @@ body {
 
 .projects-header {
     position: absolute;
-    top: 2rem;
+    top: 4rem;
     right: 4rem;
 }
 
@@ -495,7 +495,7 @@ body {
 
 .art-header {
     position: absolute;
-    top: 2rem;
+    top: 4rem;
     right: 4rem;
 }
 
@@ -678,6 +678,7 @@ body {
 .interior-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -799,6 +800,7 @@ body {
 .fashion-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -964,6 +966,7 @@ body {
 .bts-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -1118,6 +1121,7 @@ body {
 .commercial-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -1132,7 +1136,7 @@ body {
 }
 
 .commercial-gallery {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1141,7 +1145,7 @@ body {
 }
 
 .commercial-section .project-section:nth-of-type(2) .commercial-gallery {
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .commercial-row {
@@ -1149,6 +1153,19 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     align-items: start;
+}
+
+.commercial-row.full-width {
+    grid-template-columns: 1fr;
+}
+
+.commercial-row.full-width .commercial-item {
+    width: 100%;
+}
+
+.commercial-row.full-width .commercial-item img {
+    width: 100%;
+    height: auto;
 }
 
 .commercial-item {
@@ -1173,6 +1190,7 @@ body {
 .intimate-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -1287,6 +1305,7 @@ body {
 .attached-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -1358,6 +1377,7 @@ body {
 .flora-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -1486,6 +1506,7 @@ body {
 .analogue-header {
     position: relative;
     text-align: right;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -1891,13 +1912,17 @@ body {
     }
 
     .commercial-gallery {
-        padding: 1rem;
-        max-width: 100%;
+        padding: 1rem 2rem;
         gap: 1rem;
+    }
+
+    .commercial-section .project-section:nth-of-type(2) .commercial-gallery {
+        padding: 1rem 3rem;
     }
 
     .commercial-row {
         gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .commercial-header h2 {
@@ -2122,12 +2147,17 @@ body {
     }
 
     .commercial-gallery {
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         gap: 1rem;
+    }
+
+    .commercial-section .project-section:nth-of-type(2) .commercial-gallery {
+        padding: 0.5rem 2rem;
     }
 
     .commercial-row {
         gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 
     .commercial-header h2 {
