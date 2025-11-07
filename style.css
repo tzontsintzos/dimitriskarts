@@ -1828,6 +1828,14 @@ body {
         padding: 2rem 1.5rem;
     }
 
+    /* Main content spacing from navigation */
+    .work-section,
+    .projects-section,
+    .art-section,
+    .about-section {
+        padding-top: 10rem !important;
+    }
+
     .hero-content {
         bottom: 2rem;
         right: 2rem;
@@ -1886,7 +1894,7 @@ body {
         margin-bottom: 4rem;
     }
 
-    /* All Sections Mobile Bottom Spacing */
+    /* All Sections Mobile Spacing - Separate from header */
     .fashion-section,
     .bts-section,
     .intimate-section,
@@ -1895,6 +1903,7 @@ body {
     .analogue-section,
     .interior-section,
     .commercial-section {
+        padding-top: 10rem !important;
         padding-bottom: 6rem;
     }
 
@@ -1908,7 +1917,7 @@ body {
 
     /* Commercial Section Mobile */
     .commercial-section {
-        padding: 2rem 1rem;
+        padding: 10rem 1rem 2rem;
     }
 
     .commercial-gallery {
@@ -1931,7 +1940,7 @@ body {
 
     /* Fashion Section Mobile */
     .fashion-section {
-        padding: 2rem 1rem;
+        padding: 10rem 1rem 2rem;
     }
 
     .fashion-gallery {
@@ -1963,7 +1972,7 @@ body {
 
     /* BTS Section Mobile */
     .bts-section {
-        padding: 2rem 1rem;
+        padding: 10rem 1rem 2rem;
     }
 
     .bts-gallery {
@@ -1990,7 +1999,7 @@ body {
     .attached-section,
     .flora-section,
     .analogue-section {
-        padding: 2rem 1rem;
+        padding: 10rem 1rem 2rem;
     }
 
     .intimate-gallery,
@@ -2112,6 +2121,14 @@ body {
 
 @media (max-width: 480px) {
     /* Extra Small Devices */
+
+    /* Main content spacing from navigation */
+    .work-section,
+    .projects-section,
+    .art-section {
+        padding-top: 8rem !important;
+    }
+
     .hero-content {
         bottom: 1.5rem;
         right: 1.5rem;
@@ -2172,9 +2189,6 @@ body {
     }
 
     /* Commercial Section Extra Small */
-    .commercial-section {
-        padding: 1.5rem 0.75rem;
-    }
 
     .commercial-gallery {
         padding: 0.5rem 1rem;
@@ -2233,8 +2247,10 @@ body {
     .intimate-section,
     .attached-section,
     .flora-section,
-    .analogue-section {
-        padding: 1.5rem 0.75rem 5rem;
+    .analogue-section,
+    .interior-section,
+    .commercial-section {
+        padding: 8rem 0.75rem 5rem !important;
     }
 
     .fashion-gallery,
