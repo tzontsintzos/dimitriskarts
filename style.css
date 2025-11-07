@@ -839,6 +839,10 @@ body {
     padding: 2rem 4rem;
 }
 
+.andrew-gallery {
+    gap: 3.5rem;
+}
+
 .fashion-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -858,41 +862,32 @@ body {
 }
 
 /* Andrew Gallery Custom Layouts */
-.andrew-row-asymmetric {
-    display: flex;
-    gap: 2rem;
-    align-items: stretch;
-    height: 600px;
-}
-
-.andrew-row-asymmetric .fashion-item.large-left {
-    flex: 1.0;
-    display: flex;
+.andrew-row-first {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0rem;
     align-items: center;
-    justify-content: flex-start;
 }
 
-.andrew-row-asymmetric .fashion-item.large-left img {
+.andrew-row-first .fashion-item.large {
+    position: relative;
+    overflow: hidden;
+}
+
+.andrew-row-first .fashion-item.large img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
-.andrew-column-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.andrew-column-right .fashion-item {
-    flex: 1;
+.andrew-row-first .fashion-item.small {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    height: clamp(200px, 30vw, 400px);
 }
 
-.andrew-column-right .fashion-item img {
+.andrew-row-first .fashion-item.small img {
     width: auto;
     height: 100%;
     max-width: 100%;
@@ -904,6 +899,38 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
+}
+
+.andrew-row-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.andrew-row-second .fashion-item.large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.andrew-row-second .fashion-item.large img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.andrew-row-second .fashion-item.small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: clamp(200px, 30vw, 400px);
+}
+
+.andrew-row-second .fashion-item.small img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .andrew-row-single {
@@ -1888,6 +1915,10 @@ body {
         gap: 1rem;
     }
 
+    .andrew-gallery {
+        gap: 2rem;
+    }
+
     .fashion-row,
     .andrew-row-asymmetric,
     .flora-row-asymmetric,
@@ -1895,13 +1926,15 @@ body {
         gap: 1rem;
     }
 
-    .andrew-row-asymmetric {
-        height: auto;
-    }
-
-    .andrew-column-right {
+    .andrew-row-first {
         gap: 1rem;
     }
+
+
+    .andrew-row-second {
+        gap: 1rem;
+    }
+
 
     /* BTS Section Mobile */
     .bts-section {
@@ -2139,11 +2172,21 @@ body {
         gap: 1rem !important;
     }
 
+    .andrew-row-first {
+        gap: 1rem;
+    }
+
+
     .andrew-column-right,
     .intimate-column-right,
     .boukala-left-column {
         gap: 1rem;
     }
+
+    .andrew-row-second {
+        gap: 1rem;
+    }
+
 
     .flora-row-2,
     .flora-row-2-reverse {
