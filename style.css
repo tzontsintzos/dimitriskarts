@@ -34,8 +34,10 @@ body {
     z-index: 0;
 }
 
-.logo {
-    position: relative;
+.minimal-home .logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
     z-index: 1;
 }
 
@@ -130,8 +132,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 10;
+    overflow: hidden;
 }
 
 .main-nav {
@@ -153,7 +159,7 @@ body {
     color: #000;
     font-family: 'Dubai', sans-serif;
     font-weight: 700;
-    font-size: 26pt;
+    font-size: 30pt;
     transition: all 0.3s ease;
     position: relative;
     display: block;
@@ -194,12 +200,15 @@ body {
     padding: 0;
     font-weight: bold;
     line-height: 1;
+    font-family: 'Consolas', monospace;
+    position: relative;
+    top: -3px;
 }
 
 .nav-menu .submenu {
     list-style: none;
     padding-left: 1.5rem;
-    margin-top: -1.5rem;
+    margin-top: -2rem;
     overflow: hidden;
 }
 
@@ -399,7 +408,12 @@ body {
     }
 
     .minimal-home {
-        padding: 2rem;
+        padding: 1rem;
+    }
+
+    .minimal-home .logo {
+        top: 1rem;
+        left: 1rem;
     }
 }
 
@@ -540,7 +554,7 @@ body {
     display: flex;
     gap: 3rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 4rem auto 0;
     padding: 0 4rem;
     align-items: flex-start;
     width: 100%;
@@ -604,8 +618,7 @@ body {
 .about-right {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    gap: 1.8rem;
+    align-items: flex-start;
     align-self: flex-end;
 }
 
@@ -670,7 +683,7 @@ body {
 
 .interior-header h2 {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22.5pt;
     color: #000;
     margin: 0;
@@ -791,7 +804,7 @@ body {
 
 .fashion-header h2 {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22.5pt;
     color: #000;
     margin: 0;
@@ -929,7 +942,7 @@ body {
 
 .bts-header h2 {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22.5pt;
     color: #000;
     margin: 0;
@@ -1083,7 +1096,7 @@ body {
 
 .commercial-header h2 {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22.5pt;
     color: #000;
     margin: 0;
@@ -1138,7 +1151,7 @@ body {
 
 .intimate-header h2 {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22.5pt;
     color: #000;
     margin: 0;
@@ -1252,7 +1265,7 @@ body {
 
 .attached-header h2 {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22.5pt;
     color: #000;
     margin: 0;
@@ -1451,7 +1464,7 @@ body {
 
 .analogue-header h2 {
     font-family: 'Dubai', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22.5pt;
     color: #000;
     margin: 0;
@@ -1514,6 +1527,20 @@ body {
 }
 
 @media (max-width: 480px) {
+    .minimal-home {
+        padding: 1rem;
+    }
+
+    .minimal-home .logo {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .cube-toggle {
+        top: 1rem;
+        right: 1rem;
+    }
+
     .photographer-name {
         font-size: 2rem;
         letter-spacing: 1px;
@@ -1528,24 +1555,6 @@ body {
         font-size: 1.2rem;
     }
 
-    .projects-header {
-        top: 1rem;
-        right: 1rem;
-    }
-
-    .projects-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .art-header {
-        top: 1rem;
-        right: 1rem;
-    }
-
-    .art-header h2 {
-        font-size: 1.5rem;
-    }
-
     .category-link {
         font-size: 1.8rem;
     }
@@ -1557,10 +1566,6 @@ body {
 
     .back-link a {
         font-size: 1.8rem;
-    }
-
-    .about-header h2 {
-        font-size: 1.2rem;
     }
 
     .about-main {
@@ -1748,19 +1753,6 @@ body {
         font-size: 1.8rem;
     }
 
-    .interior-section {
-        padding: 6rem 1rem 2rem;
-    }
-
-    .interior-header {
-        top: 1rem;
-        right: 1rem;
-    }
-
-    .interior-header h2 {
-        font-size: 1.3rem;
-    }
-
     .time-button {
         top: 4rem;
         padding: 0.5rem 1.5rem;
@@ -1771,8 +1763,13 @@ body {
     }
 
     .interior-gallery {
-        gap: 2rem;
+        gap: 1rem;
         padding-top: 3rem;
+    }
+
+    .interior-row-asymmetric,
+    .interior-row-equal {
+        gap: 1rem;
     }
 }
 
@@ -1792,7 +1789,7 @@ body {
 
     .photographer-name {
         font-size: 3rem;
-        font-weight: normal;
+        font-weight: bold;
         letter-spacing: 2px;
         text-align: right;
         line-height: 1.1;
@@ -1837,7 +1834,7 @@ body {
     .flora-gallery,
     .analogue-gallery {
         padding: 1rem;
-        gap: 2rem;
+        gap: 1rem;
         margin-bottom: 4rem;
     }
 
@@ -1869,11 +1866,11 @@ body {
     .commercial-gallery {
         padding: 1rem;
         max-width: 100%;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .commercial-row {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .commercial-header h2 {
@@ -1888,14 +1885,14 @@ body {
     .fashion-gallery {
         padding: 1rem;
         max-width: 100%;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .fashion-row,
     .andrew-row-asymmetric,
     .flora-row-asymmetric,
     .sony-row {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .andrew-row-asymmetric {
@@ -1903,7 +1900,7 @@ body {
     }
 
     .andrew-column-right {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     /* BTS Section Mobile */
@@ -1914,7 +1911,7 @@ body {
     .bts-gallery {
         padding: 1rem;
         max-width: 100%;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .bts-row,
@@ -1923,11 +1920,11 @@ body {
     .boukala-asymmetric,
     .boukala-large-bottom,
     .boukala-final-layout {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .boukala-left-column {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     /* Art Galleries Mobile */
@@ -1944,14 +1941,14 @@ body {
     .analogue-gallery {
         padding: 1rem;
         max-width: 100%;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .intimate-row,
     .attached-row,
     .flora-row,
     .analogue-row {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .intimate-row-asymmetric {
@@ -1959,12 +1956,48 @@ body {
     }
 
     .intimate-column-right {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .flora-row-2,
     .flora-row-2-reverse {
-        gap: 2rem;
+        gap: 1rem;
+    }
+
+    .intimate-row-equal {
+        gap: 1rem;
+    }
+
+    .attached-row {
+        gap: 1rem;
+    }
+
+    .flora-patterns-grid {
+        gap: 1rem;
+    }
+
+    .analogue-row.analogue-asymmetric,
+    .analogue-row.analogue-equal {
+        gap: 1rem;
+    }
+
+    .andrew-row-equal,
+    .sony-row-equal,
+    .flora-fashion-row-single {
+        gap: 1rem;
+    }
+
+    .commercial-section .project-section .commercial-gallery .commercial-row {
+        gap: 1rem;
+    }
+
+    .yama-row-2,
+    .yama-row-2-reverse {
+        gap: 1rem;
+    }
+
+    .boukala-asymmetric {
+        gap: 1rem;
     }
 
     /* Section Headers Mobile */
@@ -2001,7 +2034,7 @@ body {
 
     .photographer-name {
         font-size: 2.4rem;
-        font-weight: normal;
+        font-weight: bold;
         letter-spacing: 1.5px;
         text-align: right;
         line-height: 1.1;
@@ -2057,28 +2090,14 @@ body {
 
     .commercial-gallery {
         padding: 0.5rem;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .commercial-row {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .commercial-header h2 {
-        font-size: 1.1rem;
-    }
-
-    .about-header h2 {
-        text-align: right;
-        font-size: 1.1rem;
-    }
-
-    .projects-header h2,
-    .art-header h2 {
-        font-size: 1.1rem;
-    }
-
-    .interior-header h2 {
         font-size: 1.1rem;
     }
 
@@ -2099,7 +2118,7 @@ body {
     .flora-gallery,
     .analogue-gallery {
         padding: 0.5rem;
-        gap: 2rem;
+        gap: 1rem;
         margin-bottom: 3rem;
     }
 
@@ -2117,27 +2136,55 @@ body {
     .boukala-asymmetric,
     .boukala-large-bottom,
     .boukala-final-layout {
-        gap: 2rem !important;
+        gap: 1rem !important;
     }
 
     .andrew-column-right,
     .intimate-column-right,
     .boukala-left-column {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .flora-row-2,
     .flora-row-2-reverse {
-        gap: 2rem;
+        gap: 1rem;
     }
 
-    .fashion-header h2,
-    .bts-header h2,
-    .intimate-header h2,
-    .attached-header h2,
-    .flora-header h2,
-    .analogue-header h2 {
-        font-size: 1.1rem;
+    .intimate-row-equal {
+        gap: 1rem;
+    }
+
+    .attached-row {
+        gap: 1rem;
+    }
+
+    .flora-patterns-grid {
+        gap: 1rem;
+    }
+
+    .analogue-row.analogue-asymmetric,
+    .analogue-row.analogue-equal {
+        gap: 1rem;
+    }
+
+    .andrew-row-equal,
+    .sony-row-equal,
+    .flora-fashion-row-single {
+        gap: 1rem;
+    }
+
+    .yama-row-2,
+    .yama-row-2-reverse {
+        gap: 1rem;
+    }
+
+    .boukala-asymmetric {
+        gap: 1rem;
+    }
+
+    .interior-row-asymmetric,
+    .interior-row-equal {
+        gap: 1rem;
     }
 
     .project-title img {
