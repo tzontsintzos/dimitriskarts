@@ -1625,6 +1625,26 @@ body {
         font-size: 1.2rem;
     }
 
+    /* Center Projects and Art menus on mobile */
+    .projects-section,
+    .art-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .projects-categories,
+    .art-categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
     .category-link {
         font-size: 2.1rem;
     }
@@ -1883,14 +1903,14 @@ body {
 
     .hero-content {
         bottom: 2rem;
-        right: 2rem;
+        right: 3rem;
         left: auto;
         transform: none;
     }
 
     .photographer-name {
-        font-size: 3rem;
-        font-weight: bold;
+        font-size: 3.7rem;
+        font-weight: normal;
         letter-spacing: 2px;
         text-align: right;
         line-height: 1.1;
@@ -2157,6 +2177,26 @@ body {
         font-size: 1.5rem;
     }
 
+    /* Center Projects and Art menus on mobile */
+    .projects-section,
+    .art-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .projects-categories,
+    .art-categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
     /* Category Links Mobile */
     .category-link {
         font-size: 2.3rem;
@@ -2186,22 +2226,22 @@ body {
 
     .hero-content {
         bottom: 1.5rem;
-        right: 1.5rem;
+        right: 2rem;
         left: auto;
         transform: none;
         max-width: calc(100% - 3rem);
     }
 
     .photographer-name {
-        font-size: 2.4rem;
-        font-weight: bold;
+        font-size: 3rem;
+        font-weight: normal;
         letter-spacing: 1.5px;
         text-align: right;
         line-height: 1.1;
     }
 
     .photographer-name .first-name {
-        right: -1.5rem;
+        right: -1.7rem;
     }
 
     .nav-menu li a {
