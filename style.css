@@ -489,7 +489,7 @@ body {
 
 .back-link a {
     font-family: 'Caveat', cursive;
-    font-size: 22.5pt;
+    font-size: 30pt;
     color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -2026,9 +2026,25 @@ body {
     }
 
     .andrew-row-first {
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        align-items: center;
     }
 
+    .andrew-row-first .fashion-item.small {
+        height: clamp(120px, 35vw, 220px);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .andrew-row-first .fashion-item.small img {
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
 
     .andrew-row-second {
         gap: 1rem;
@@ -2381,9 +2397,25 @@ body {
     }
 
     .andrew-row-first {
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.3rem;
+        align-items: center;
     }
 
+    .andrew-row-first .fashion-item.small {
+        height: clamp(100px, 30vw, 180px);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .andrew-row-first .fashion-item.small img {
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
 
     .andrew-column-right,
     .intimate-column-right,
