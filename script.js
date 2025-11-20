@@ -1,4 +1,4 @@
-const { createApp } = Vue;
+const { createApp } = window.Vue || Vue;
 
 createApp({
     data() {
