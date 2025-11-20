@@ -30,6 +30,9 @@
                 <div class="logo">
                     <img src="logo.png" alt="Karts" class="header-logo">
                 </div>
+                <div v-if="activeSection === 'about'" class="about-header-mobile">
+                    <h2>ABOUT</h2>
+                </div>
                 <div v-if="activeSection === 'home' || activeSection === 'work'" class="close-toggle" @click="closePortfolio">
                     <img src="WEBSITE CONTENT/PHOTOS/x_button.png" alt="Close">
                 </div>
