@@ -1910,10 +1910,8 @@ body {
 
 /* Enhanced Mobile Optimizations */
 @media (max-width: 768px) {
-    /* Make home, menu, projects and art non-scrollable on tablets too */
+    /* Make home and menu non-scrollable on tablets */
     body:has(.nav-overlay.active),
-    body:has(#projects:not([style*="none"])),
-    body:has(#art:not([style*="none"])),
     body:has(#work:not([style*="none"])),
     body:has(.hero:not([style*="none"])) {
         overflow: hidden;
@@ -1924,12 +1922,17 @@ body {
 
     .nav-overlay.active,
     .work-section,
-    .projects-section,
-    .art-section,
     .hero {
         overflow: hidden;
         height: 100vh;
         max-height: 100vh;
+    }
+
+    /* Make projects and art scrollable */
+    .projects-section,
+    .art-section {
+        overflow-y: auto;
+        min-height: 100vh;
     }
 
     /* Menu Overlay Improvements */
@@ -2315,10 +2318,8 @@ body {
 @media (max-width: 480px) {
     /* Extra Small Devices */
 
-    /* Make home, menu, projects and art non-scrollable */
+    /* Make home and menu non-scrollable */
     body:has(.nav-overlay.active),
-    body:has(#projects:not([style*="none"])),
-    body:has(#art:not([style*="none"])),
     body:has(#work:not([style*="none"])),
     body:has(.hero:not([style*="none"])) {
         overflow: hidden;
@@ -2329,12 +2330,17 @@ body {
 
     .nav-overlay.active,
     .work-section,
-    .projects-section,
-    .art-section,
     .hero {
         overflow: hidden;
         height: 100vh;
         max-height: 100vh;
+    }
+
+    /* Make projects and art scrollable */
+    .projects-section,
+    .art-section {
+        overflow-y: auto;
+        min-height: 100vh;
     }
 
     /* Main content spacing from navigation */
