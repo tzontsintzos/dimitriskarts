@@ -163,7 +163,7 @@ body {
     color: #000;
     font-family: 'Dubai', sans-serif;
     font-weight: 700;
-    font-size: 22.5pt;
+    font-size: 2rem;
     transition: all 0.3s ease;
     position: relative;
     display: block;
@@ -217,7 +217,7 @@ body {
 }
 
 .nav-menu .submenu li a {
-    font-size: 20pt;
+    font-size: 1.6rem;
     padding: 0.1rem 0;
     color: #000;
 }
@@ -1972,12 +1972,12 @@ body {
     }
 
     .nav-menu li a {
-        font-size: 26pt;
+        font-size: 2.2rem;
         padding: 0.2rem 0;
     }
 
     .nav-menu .submenu li a {
-        font-size: 12pt !important;
+        font-size: 1.4rem !important;
     }
 
     /* Close Button */
@@ -2371,11 +2371,11 @@ body {
     }
 
     .nav-menu li a {
-        font-size: 22pt;
+        font-size: 1.8rem;
     }
 
     .nav-menu .submenu li a {
-        font-size: 10pt !important;
+        font-size: 1.2rem !important;
     }
 
     .arrow-below-work {
