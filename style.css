@@ -415,6 +415,23 @@ body {
         top: 1rem;
         left: 1rem;
     }
+
+    /* Art Gallery Descriptions - Tablet */
+    .intimate-description,
+    .attached-description,
+    .flora-description,
+    .analogue-description {
+        padding: 0 3rem;
+        margin: 2.5rem auto;
+    }
+
+    .intimate-description p,
+    .attached-description p,
+    .flora-description p,
+    .analogue-description p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 }
 
 /* Projects Section */
@@ -1609,7 +1626,7 @@ body {
     }
 
     .category-link {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     }
 
     .back-link {
@@ -1732,7 +1749,7 @@ body {
     .attached-description,
     .flora-description,
     .analogue-description {
-        padding: 0 1.5rem;
+        padding: 0 2.5rem;
         margin: 2rem auto;
     }
 
@@ -2099,7 +2116,7 @@ body {
     .projects-header,
     .art-header {
         top: 2rem;
-        right: 3rem;
+        right: 1.5rem;
     }
 
     .interior-header,
@@ -2112,7 +2129,7 @@ body {
     .analogue-header {
         position: absolute;
         top: 2rem;
-        right: 3rem;
+        right: 1.5rem;
         margin: 0;
     }
 
@@ -2133,6 +2150,16 @@ body {
 
     .commercial-header h2 {
         font-size: 2rem;
+    }
+
+    /* Flora header smaller to avoid logo overlap */
+    .flora-header h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Category Links Mobile */
+    .category-link {
+        font-size: 2.3rem;
     }
 
     /* Project Titles Mobile */
@@ -2236,7 +2263,7 @@ body {
     .projects-header,
     .art-header {
         top: 2rem;
-        right: 2.5rem;
+        right: 1rem;
     }
 
     .interior-header,
@@ -2249,7 +2276,7 @@ body {
     .analogue-header {
         position: absolute;
         top: 2rem;
-        right: 2.5rem;
+        right: 1rem;
         margin: 0;
     }
 
@@ -2264,9 +2291,13 @@ body {
     .commercial-header h2,
     .intimate-header h2,
     .attached-header h2,
-    .flora-header h2,
     .analogue-header h2 {
         font-size: 1.8rem;
+    }
+
+    /* Flora header smaller to avoid logo overlap */
+    .flora-header h2 {
+        font-size: 1.3rem;
     }
 
     /* All Sections Extra Small */
@@ -2376,7 +2407,7 @@ body {
     .attached-description,
     .flora-description,
     .analogue-description {
-        padding: 0 1rem;
+        padding: 0 2rem;
         margin: 1.5rem auto;
     }
 
