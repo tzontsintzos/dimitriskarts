@@ -17,7 +17,9 @@
                 <source src="black_white_video_compressed.mp4" type="video/mp4">
             </video>
             <div class="logo">
-                <img src="logo.png" alt="Karts" class="header-logo">
+                <a href="#" @click.prevent="goHome" class="logo-link">
+                    <img src="logo.png" alt="Karts" class="header-logo">
+                </a>
             </div>
             <div class="cube-toggle" @click="openPortfolio">
                 <div class="cube"></div>
@@ -28,7 +30,9 @@
         <div v-if="portfolioOpen" class="portfolio-view">
             <nav class="main-header">
                 <div class="logo">
-                    <img src="logo.png" alt="Karts" class="header-logo">
+                    <a href="#" @click.prevent="goHome" class="logo-link">
+                        <img src="logo.png" alt="Karts" class="header-logo">
+                    </a>
                 </div>
                 <div v-if="activeSection === 'about'" class="about-header-mobile">
                     <h2>ABOUT</h2>

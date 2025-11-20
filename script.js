@@ -55,6 +55,12 @@ createApp({
             this.activeSection = 'home';
             window.location.hash = '';
         },
+        goHome() {
+            // Always go to the minimal home page with video
+            this.portfolioOpen = false;
+            this.activeSection = 'home';
+            window.location.hash = '';
+        },
         initFromHash() {
             const hash = window.location.hash.substring(1);
             if (hash) {
