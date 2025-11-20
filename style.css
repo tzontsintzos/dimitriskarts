@@ -159,7 +159,7 @@ body {
     color: #000;
     font-family: 'Dubai', sans-serif;
     font-weight: 700;
-    font-size: 30pt;
+    font-size: 22.5pt;
     transition: all 0.3s ease;
     position: relative;
     display: block;
@@ -472,7 +472,7 @@ body {
 
 .back-link a {
     font-family: 'Caveat', cursive;
-    font-size: 30pt;
+    font-size: 22.5pt;
     color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -548,7 +548,7 @@ body {
 .about-header h2 {
     font-family: 'Dubai', sans-serif;
     font-weight: bold;
-    font-size: 30pt;
+    font-size: 22.5pt;
     color: #000;
     margin: 0;
     letter-spacing: 2px;
@@ -1618,7 +1618,7 @@ body {
     }
 
     .back-link a {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .about-main {
@@ -1783,7 +1783,7 @@ body {
     }
 
     .about-section .back-link a {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
     }
 
     /* Ensure all galleries fit within viewport */
@@ -1826,7 +1826,7 @@ body {
     }
 
     .back-link a {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .time-button {
@@ -2118,7 +2118,7 @@ body {
 
     .projects-header h2,
     .art-header h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .interior-header h2,
@@ -2128,11 +2128,11 @@ body {
     .attached-header h2,
     .flora-header h2,
     .analogue-header h2 {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .commercial-header h2 {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     /* Project Titles Mobile */
@@ -2255,7 +2255,7 @@ body {
 
     .projects-header h2,
     .art-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .interior-header h2,
@@ -2266,7 +2266,7 @@ body {
     .attached-header h2,
     .flora-header h2,
     .analogue-header h2 {
-        font-size: 1.1rem;
+        font-size: 1.8rem;
     }
 
     /* All Sections Extra Small */
@@ -2426,7 +2426,7 @@ body {
     }
 
     .about-section .back-link a {
-        font-size: 1.4rem;
+        font-size: 2.5rem;
     }
 
     .about-left {
