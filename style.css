@@ -1669,7 +1669,7 @@ body {
     }
 
     .back-link {
-        bottom: 2rem;
+        bottom: calc(2rem + env(safe-area-inset-bottom));
         left: 1rem;
     }
 
@@ -1881,7 +1881,7 @@ body {
     }
 
     .back-link {
-        bottom: 1rem;
+        bottom: calc(1rem + env(safe-area-inset-bottom));
         left: 1rem;
     }
 
@@ -2384,7 +2384,7 @@ body {
     }
 
     .nav-menu .submenu li a {
-        font-size: 1rem !important;
+        font-size: 1.5rem !important;
         white-space: nowrap;
     }
 
