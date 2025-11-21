@@ -46,7 +46,7 @@ body {
 }
 
 .logo h1 {
-    font-family: 'Mistral', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 67.5pt;
     font-weight: normal;
     color: #000;
@@ -1650,6 +1650,7 @@ body {
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        padding-top: 0;
     }
 
     .projects-categories,
@@ -1945,7 +1946,12 @@ body {
     .projects-section,
     .art-section,
     .about-section {
-        padding-top: 10rem !important;
+        padding-top: 6rem !important;
+    }
+
+    .projects-section,
+    .art-section {
+        padding-bottom: 4rem !important;
     }
 
     .hero-content {
@@ -1977,7 +1983,8 @@ body {
     }
 
     .nav-menu .submenu li a {
-        font-size: 1.4rem !important;
+        font-size: 1.2rem !important;
+        white-space: nowrap;
     }
 
     /* Close Button */
@@ -2279,6 +2286,7 @@ body {
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        padding-top: 0;
     }
 
     .projects-categories,
@@ -2290,6 +2298,7 @@ body {
         gap: 1.5rem;
         width: 100%;
         text-align: center;
+        padding-bottom: 100px; /* Add padding for mobile browser bottom bar */
     }
 
     /* Category Links Mobile */
@@ -2347,7 +2356,8 @@ body {
     .work-section,
     .projects-section,
     .art-section {
-        padding-top: 8rem !important;
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
     }
 
     .hero-content {
@@ -2375,7 +2385,8 @@ body {
     }
 
     .nav-menu .submenu li a {
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
+        white-space: nowrap;
     }
 
     .arrow-below-work {
