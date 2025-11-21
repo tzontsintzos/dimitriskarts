@@ -2448,7 +2448,13 @@ body {
     .commercial-header,
     .intimate-header,
     .attached-header,
-    .flora-header,
+    .flora-header {
+        position: absolute;
+        top: 2.8rem;
+        right: 1rem;
+        margin: 0;
+    }
+
     .analogue-header {
         position: absolute;
         top: 2rem;
@@ -2473,7 +2479,7 @@ body {
 
     /* Flora header smaller to avoid logo overlap */
     .flora-header h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     /* All Sections Extra Small */
