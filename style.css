@@ -554,6 +554,11 @@ body {
     display: none;
 }
 
+/* Gallery Header in Navigation - Hidden by Default */
+.gallery-header-mobile {
+    display: none;
+}
+
 .about-section .back-link {
     position: absolute;
     bottom: 2rem;
@@ -1714,10 +1719,11 @@ body {
     /* Show ABOUT header in navigation on mobile */
     .about-header-mobile {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         flex: 1;
         justify-content: flex-end;
         margin-right: 1rem;
+        padding-top: 1.5rem;
     }
 
     .about-header-mobile h2 {
@@ -1726,11 +1732,52 @@ body {
         font-size: 1.8rem;
         color: #000;
         margin: 0;
+        margin-bottom: 0;
         letter-spacing: 2px;
+        line-height: 1;
     }
 
     /* Hide the regular about header on mobile */
     .about-section .about-header {
+        display: none;
+    }
+
+    /* Show gallery headers in navigation on mobile */
+    .gallery-header-mobile {
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
+        justify-content: flex-end;
+        margin-right: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .gallery-header-mobile h2 {
+        font-family: 'Dubai', sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #000;
+        margin: 0;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+        text-align: right;
+        line-height: 1;
+    }
+
+    /* Flora header smaller font */
+    .flora-header-mobile h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Hide the original gallery headers on mobile */
+    .interior-header,
+    .fashion-header,
+    .bts-header,
+    .commercial-header,
+    .intimate-header,
+    .attached-header,
+    .flora-header,
+    .analogue-header {
         display: none;
     }
 
@@ -2725,6 +2772,21 @@ body {
     .about-header-mobile h2 {
         font-size: 1.5rem;
         letter-spacing: 1.5px;
+    }
+
+    /* Adjust gallery headers in navigation for extra small screens */
+    .gallery-header-mobile {
+        margin-right: 0.5rem;
+    }
+
+    .gallery-header-mobile h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    /* Flora header smaller font */
+    .flora-header-mobile h2 {
+        font-size: 1.1rem;
     }
 
     .about-bio {
